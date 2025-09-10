@@ -3,25 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>candra</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Candra Agung</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="script2.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
 </head>
 <body>
+    <!-- Header -->
+    <section class="header">
+        <nav>
+           <a href="index.html"><img src="images/logo.png"></a>
+           <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="indexabout.html">ABOUT</a></li>
+                    <li><a href="indexcontact.html">CONTACT</a></li>
+                </ul>
+           </div>
+           <i class="fa fa-bars" id="barsIcon" onclick="showMenu()"></i>
+        </nav>
 
-<nav>
-  <i class="fa fa-bars" onclick="showMenu()"></i>
-  <div id="navLinks">
-    <i class="fa fa-xmark" onclick="hideMenu()"></i>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
-  </div>
-</nav>
+    <div class="text-box">
+        <h1>Candra Agung Alief Prasetyo</h1>
+        <p>Mahasiswa Ilmu Komputer 61 IPB University</p>
+        <p>M0403241006</p>
+    </div>
+
+    </section>
+    <!-- End Header -->
+
+    <!------product------>
+    <section class="product">
+
+    <section class="wrap">
+        <div class="wrapper">
+            <i id="left" class="fas fa-angle-left arrowIcons"></i>
+            <h2>My First Game</h2>
+            <p>Driven By The Unknown</p>
+            <div class="carousel">
+                <img src="slide/game_7.jpg" alt="img" draggable="false">
+                <img src="slide/game_2.jpg" alt="img" draggable="false">
+                <img src="slide/game_3.jpg" alt="img" draggable="false">
+                <img src="slide/game_4.jpg" alt="img" draggable="false">
+                <img src="slide/game_5.jpg" alt="img" draggable="false">
+                <img src="slide/game_6.jpg" alt="img" draggable="false">
+            </div>
+            <i id="right" class="fas fa-angle-right arrowIcons"></i>
+        </div>
+
+
 
 <!---------JavaScript for Toggle Menu--------->
-<script src="script.js"></script>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        var barsIcon = document.querySelector(".fa-bars");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+            barsIcon.style.position = "relative";
+            barsIcon.style.right = "-200px";
+        }
+        function hideMenu(){
+           navLinks.style.right = "-200px";
+           barsIcon.style.position = "absolute";
+           barsIcon.style.right = "20px";
+        }
+    </script>
+
+   
+
 <!---------JavaScript for Toggle Menu--------->
+
+
+
 </body>
 </html>
