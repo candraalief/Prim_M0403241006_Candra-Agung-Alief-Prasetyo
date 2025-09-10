@@ -9,10 +9,11 @@ body{
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/bannercontact.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner1.png);
     background-position: center;
     background-size: cover;
     position: relative;
+
 }
 nav{
     display: flex;
@@ -21,7 +22,7 @@ nav{
     align-items: center;
 }
 nav img{
-    width: 120px;
+    width: 200px;
 }
 .nav-links{
     flex: 1;
@@ -52,10 +53,9 @@ nav img{
 }
 
 .text-box {
-    margin-top: 30px;
     color: aliceblue;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
@@ -69,8 +69,8 @@ nav img{
     transition: 2s;
 }
 .text-box p {
-    margin: 20px 0 15px;
-    font-size: 20px;
+    margin: 10px 0 15px;
+    font-size: 14px;
     color: azure;
 }
 .hero-btn,.hero-insta {
@@ -130,6 +130,6 @@ nav .fa{
         cursor: pointer;
     }
     .nav-links ul{
-        padding: 30px;
+        padding: 25px;
     }
 }
